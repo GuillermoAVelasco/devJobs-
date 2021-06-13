@@ -1,0 +1,38 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJobs con NodeJS, Handlebars Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "development":"concurrently \"npm run dev\" \"npm run watch \" ",
+    "dev": "nodemon ./index",
+    "start": "node ./index.js",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Guillermo Velasco",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.4.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.11.1",
+    "mongoose": "^5.12.13",
+    "session": "^0.1.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
